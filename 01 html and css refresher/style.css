@@ -1,6 +1,3 @@
-/*font-family: 'Roboto Slab', serif;
-font-family: 'Roboto', sans-serif;*/
-
 html,
 body {
     margin: 0px;
@@ -9,19 +6,7 @@ body {
 }
 
 
-/*Header & Nav Bar*/
-
-footer {
-    background-color: white;
-    bottom: 0px;
-    /*left: 235px;*/
-    /*padding-top: 20px;*/
-    position: fixed;
-    background-position: center;
-    width: 100%;
-    height: 60px;
-    display: inline-block;
-}
+/*Nav Bar & Footer*/
 
 nav a {
     position: relative;
@@ -56,13 +41,51 @@ nav a:active {
     
 }
 
+footer {
+    background-color: white;
+    bottom: 0px;
+    /*left: 235px;*/
+    /*padding-top: 20px;*/
+    position: fixed;
+    background-position: center;
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+}
+
+.footer {
+    color: black;
+    background-color: white;
+    padding: 20px 20px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    letter-spacing: 8px;
+    font-weight: 700;
+    float: right;
+    /*left: 30%;*/
+    vertical-align: bottom;
+    display: inline;
+    /*bottom: 50px;*/
+    list-style-image: none;
+    /*position: relative;*/
+}
+
+.footer a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #2f599b;
+    text-decoration: none;
+}
+
 
 /*Background image info*/
 
-p.post{
-    padding-left: 10cm;
 
-}
 
 #blog {
     background-image: url(images/buffalo.jpg);
@@ -73,75 +96,8 @@ p.post{
     width: 100%;
     height: 100%;
 }
-.blogbox {
-    position: fixed ;
-    left: 20%;
-    right: 20%;
-    height: 100%;
-    color: black;
-    background-color: rgba(0, 0, 0, 0);
-    width:auto;
-    /*overflow: scroll;*/
-    
-}
-.blogintro {
-    padding: 30px;
-    height: 100%;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 1100px;
-    /*overflow: scroll;*/
-    
-}
 
-.blogboxpage {
-    position: fixed ;
-    left: 20%;
-    right: 20%;
-    height: 100%;
-    color: black;
-    background-color: rgba(0, 0, 0, 0);
-    width:auto;
-    /*overflow: scroll;*/
-    
-}
-.blogintropage {
-    padding: 30px;
-    height: 90%;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 1100px;
-    overflow: scroll;
-}
-.blogintro a:link, a:visited {
-    /*font-family: 'Roboto', sans-serif;*/
-    font-weight: 800;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.blogintropage a:link, a:visited {
-    /*font-family: 'Roboto', sans-serif;*/
-    font-weight: 800;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.blogintro a:hover {
-    color: #2f599b;
-}
-
-.blogintropage a:hover {
-    color: #2f599b;
-}
-pagetitle a{
-    font-family: 'Rock Salt', sans-serif;
-    font-weight: 800;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
+/*Titles & Headings*/
 
 posttitle {
     font-family: 'Roboto', sans-serif;
@@ -171,41 +127,95 @@ secondheading {
     font-size: .8em;
     text-transform: uppercase;
 }
-/*Footer*/
 
-.footer {
-    color: black;
-    background-color: white;
-    padding: 20px 10px;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    float: right;
-    /*left: 30%;*/
-    vertical-align: bottom;
-    display: inline;
-    /*bottom: 50px;*/
-    list-style-image: none;
-    /*position: relative;*/
+p.post{
+    padding-left: 10cm;
 }
 
-.footer a:link,
-a:visited {
+
+/*Blog HomePage*/
+
+.blogbox {
+    position: fixed ;
+    left: 20%;
+    right: 20%;
+    height: 100%;
     color: black;
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    width:auto;
+    /*overflow: scroll;*/
+    
+}
+.blogintro {
+    padding: 30px;
+    height: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1100px;
+    /*overflow: scroll;*/
+    
 }
 
-.footer a:hover {
+.blogintro a:link, a:visited {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blogintro a:hover {
     color: #2f599b;
-    text-decoration: none;
 }
+
+/*Blog Post*/
+
+.blogboxpage {
+    position: fixed ;
+    left: 20%;
+    right: 20%;
+    height: 100%;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    width:auto;
+    /*overflow: scroll;*/
+    
+}
+.blogintropage {
+    padding: 30px;
+    height: 90%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1100px;
+    overflow: scroll;
+}
+.blogintropage a:link, a:visited {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blogintropage a:hover {
+    color: #2f599b;
+}
+pagetitle a{
+    font-family: 'Rock Salt', sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+
+
+/*Footer*/
 
 
 /*About Section Social Links*/
 
-.social ul {
+/*.social ul {
     color: black;
     padding: 3px;
     text-align: left;
@@ -228,11 +238,11 @@ a:visited {
 }
 
 
-/*Product Gallery Menu*/
+Product Gallery Menu
 
 .productmenu {
     color: #2f599b;
     text-align: left;
     text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px;*/
 }
