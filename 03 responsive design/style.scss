@@ -1,0 +1,232 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+$mainfont: 'Roboto', sans-serif;
+$secondfont: 'Roboto Slab', serif;
+$thirdfont: 'Rock Salt';
+
+$maincolor: black;
+$secondcolor: #2f599b;
+$thirdcolor: white;
+
+@mixin transition {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*Nav Bar & Footer*/
+
+nav a {
+  font: {
+    family: $mainfont;
+    weight: 900;
+    /* size: 1.1em;*/
+  }
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  color: $maincolor;
+  padding: 30px 10px;
+  height: 5%;
+  line-height: 5%;
+  letter-spacing: 0.5px;
+  float: left;
+  clear: none;
+  vertical-align: bottom;
+  background-color: $thirdcolor;
+  @include transition;
+}
+
+nav a:hover {
+  color: $secondcolor;
+
+}
+
+.logo {
+  vertical-align: text-top;
+  padding-top: 12px;
+}
+
+footer {
+  background: {
+    color: $thirdcolor;
+    position: center;
+  }
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+}
+
+.footer {
+  color: $maincolor;
+  background-color: $thirdcolor;
+  padding: 0px;
+  text-align: right;
+  text-decoration: none;
+  float: right;
+  display: inline;
+  list-style-image: none;
+}
+
+.footer a:link,
+a:visited {
+  color: $maincolor;
+  text-decoration: none;
+  background-color: $thirdcolor;
+  padding: 20px;
+  height: 100%;
+  @include transition;
+}
+
+.footer a:hover {
+  color: $thirdcolor;
+  background-color: $secondcolor;
+  text-decoration: none;
+}
+
+/*Background image info*/
+
+#blog {
+  background: {
+    image: url(images/buffalo.jpg);
+    size: 100%;
+    position: center;
+    attachment: fixed;
+    repeat: no-repeat;
+  }
+  width: 100%;
+  height: 100%;
+}
+
+/*Titles & Headings*/
+
+posttitle {
+  font: {
+    family: $mainfont;
+    weight: 800;
+    size: 2em;
+  }
+  text-transform: uppercase;
+
+}
+
+subheading {
+  font: {
+    family: $mainfont;
+    weight: 500;
+    size: 1em;
+  }
+}
+
+secondheading {
+  @extend subheading;
+}
+
+secondtitle {
+  @extend subheading;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+p.post {
+  padding-left: 10cm;
+}
+
+/*Blog HomePage*/
+
+.blogbox {
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  /*color: $maincolor;
+  background-color: rgba(0, 0, 0, 0);*/
+  width: 60%;
+}
+
+.blogintro {
+  padding: 30px;
+  height: 100%;
+  color: $maincolor;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+
+.blogintro a:link, a:visited {
+  font-weight: 800;
+  color: $maincolor;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition;
+}
+
+.blogintro a:hover {
+  color: $secondcolor;
+}
+
+/*Blog Post*/
+
+.blogboxpage {
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  color: $maincolor;
+  background-color: rgba(0, 0, 0, 0);
+  width: 60%;
+  /*overflow: scroll;*/
+
+}
+
+.blogintropage {
+  padding: 30px;
+  height: 90%;
+  color: $maincolor;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  overflow: scroll;
+}
+
+.blogintropage a:link, a:visited {
+  font-weight: 800;
+  color: $maincolor;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition;
+}
+
+.blogintropage a:hover {
+  color: $secondcolor;
+}
+
+pagetitle a:link {
+  font: {
+    family: $thirdfont;
+    weight: 800;
+    size: 1.3em;
+  }
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  @include transition;
+  &:hover {
+    color: $secondcolor;
+  }
+}
+
+table a:link {
+  @include transition;
+
+}
+
+table a:hover {
+  color: $secondcolor;
+}

@@ -24,16 +24,24 @@ nav a {
     float: left;
     clear: none;
     vertical-align: bottom;
+    background-color: none ;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease ;
+    -o-transition: all 1s ease ;
+    transition: all 1s ease ;
+    
+    
 }
 
 nav a:hover {
-    color: #2f599b;
+    color: #2f599b;   
+    
 }
-
+/*
 nav a:active {
     color: #2f599b;
 
-}
+}*/
 .logo {
     vertical-align:text-top;
     padding-top: 15px;
@@ -56,15 +64,14 @@ footer {
 .footer {
     color: black;
     background-color: white;
-    padding: 20px 20px;
+    padding: 0px;
     text-align: right;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    letter-spacing: 8px;
     font-weight: 700;
     float: right;
     /*left: 30%;*/
-    vertical-align: bottom;
+   /* vertical-align: bottom;*/
     display: inline;
     /*bottom: 50px;*/
     list-style-image: none;
@@ -75,13 +82,25 @@ footer {
 a:visited {
     color: black;
     text-decoration: none;
+    background-color: white ;
+    padding: 20px;
+    height: 100%;
+    -webkit-transition: all 0.5s ease ;
+    -moz-transition: all 0.5s ease ;
+    -o-transition: all 0.5s ease ;
+    transition: all 0.5s ease ;
 }
 
 .footer a:hover {
-    color: #2f599b;
+    color: #ffffff;
+    background-color: #2f599b;
     text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    
 }
-
 
 /*Background image info*/
 
@@ -107,10 +126,10 @@ posttitle {
     
 }
 subheading {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 1em;
-    text-transform: uppercase;
+    
 }
 
 secondtitle {
@@ -122,10 +141,10 @@ secondtitle {
 
 
 secondheading {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: .8em;
-    text-transform: uppercase;
+    
 }
 
 p.post{
@@ -200,16 +219,35 @@ p.post{
 .blogintropage a:hover {
     color: #2f599b;
 }
-pagetitle a{
+pagetitle a:link {
     font-family: 'Rock Salt', sans-serif;
     font-weight: 800;
     font-size: 1.3em;
     text-transform: uppercase;
     padding-bottom: 20px;
+    -webkit-transition: all 4s ease ;
+    -moz-transition: all 4s ease ;
+    -o-transition: all 4s ease ;
+    transition: all 4s ease ;    
+
 }
 
+pagetitle a:hover {
+    font-size: 1.5em;
+   
+}
 
+table a:link {
+-webkit-transition: all 1s ease ;
+    -moz-transition: all 1s ease ;
+    -o-transition: all 1s ease ;
+    transition: all 1s ease ; 
+    
+}
 
+table a:hover {
+    background-color: rgba(47, 89, 155, 0.2);
+}
 /*Footer*/
 
 
