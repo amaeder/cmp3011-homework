@@ -21,26 +21,68 @@
                 <br/>
                 <subheading>January 20, 2016 | Alex Maeder</subheading>
 
-                <form>
+                <form name="myform" onsubmit="return validateForm()" method="post">
                     <ul>
-                        <li><input type="text" id="name" name="name"></li>
-                        <li><label for="name">Full Name</label></li>
+                        <li><input type="text" id="username" name="username"></li>
+
+                        <li><label for="username">Full Name</label></li>
+
+                        <li>
+                            <div id="username_err"></div>
+                        </li>
                         <br/>
+
                         <li><input type="email" id="email" name="email"></li>
+
                         <li><label for="email">Email Address</label></li>
+
+                        <li>
+                            <div id="email_err"></div>
+                        </li>
                         <br/>
+
                         <li><input type="password" id="password" name="password"></li>
+
                         <li><label for="password">Password</label></li>
                         <br/>
-                        <li><input type="password" id="password" name="password"></li>
-                        <li><label for="password">Confirm Password</label></li>
+                        <li><input type="password" id="password2" name="password2"></li>
+
+                        <li>
+                            <div id="password_err"></div>
+                        </li>
+
+                        <li><label for="password2">Confirm Password</label></li>
+                        <table>
+                            <td><input type="radio" name="color" value="grey"></td>
+
+                            <td>
+                                <div style="width: 40px; height: 20px; margin: 10px; background-color: #4a4b50"></div>
+                            </td>
+                            <br/>
+
+                            <td><input type="radio" name="color" value="blue"></td>
+
+                            <td>
+                                <div style="width: 40px; height: 20px; margin: 10px; background-color: #17a5f7"></div>
+                            </td>
+                            <br/>
+
+                            <td><input type="radio" name="color" value="orange"></td>
+
+                            <td>
+                                <div style="width: 40px; height: 20px; margin: 10px; background-color: #fd7c1e"></div>
+                            </td>
+                            <br/>
+
+                            <td><input type="radio" name="color" value="red"></td>
+
+                            <td>
+                                <div style="width: 40px; height: 20px; margin: 10px; background-color: #96031b"></div>
+                            </td>
+                            <br/>
+                        </table>
                         <br/>
-                        <li><input type="radio" name="color" value="4a4b50"> #4a4b50</li>
-                        <li><input type="radio" name="color" value="17a5f7"> #17a5f7</li>
-                        <li><input type="radio" name="color" value="fd7c1e"> #fd7c1e</li>
-                        <li><input type="radio" name="color" value="96031b"> #96031b</li>
-                        <br/>
-                        <li><input type="submit">
+                        <li><input type="submit" name="submit" id="submit" value="submit" onclick="validateForm()">
                     </ul>
                 </form>
         </article>
