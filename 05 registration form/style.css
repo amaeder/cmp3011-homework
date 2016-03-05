@@ -1,0 +1,247 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', serif; }
+
+form {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+form ul {
+  list-style-type: none; }
+
+input[type=button], input[type=submit] {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+input[type=text]:focus {
+  background-color: rgba(207, 237, 255, 0.8); }
+
+input[type=email]:focus {
+  background-color: rgba(207, 237, 255, 0.8); }
+
+input[type=password]:focus {
+  background-color: rgba(207, 237, 255, 0.8); }
+
+input[type=text]:hover {
+  border: 2px solid #3464a6; }
+
+input[type=email]:hover {
+  border: 2px solid #3464a6; }
+
+input[type=password]:hover {
+  border: 2px solid #3464a6; }
+
+#email_err, #username_err, #password_err {
+  color: red; }
+
+/*Nav Bar & Footer*/
+nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  /* size: 1.1em;*/
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  color: black;
+  padding: 30px 10px;
+  height: 5%;
+  line-height: 5%;
+  letter-spacing: 0.5px;
+  float: left;
+  clear: none;
+  vertical-align: bottom;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: none; } }
+nav a:hover {
+  color: #2f599b; }
+
+.logo {
+  vertical-align: text-top;
+  padding-top: 12px; }
+
+footer {
+  background-color: white;
+  background-position: center;
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: inline-block; }
+
+.footer {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-align: right;
+  text-decoration: none;
+  float: right;
+  display: inline;
+  list-style-image: none; }
+
+.footer a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 20px;
+  height: 90%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.footer a:hover {
+  color: white;
+  background-color: #2f599b;
+  text-decoration: none; }
+
+/*Background image info*/
+#blog {
+  background-image: url(images/buffalo.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
+
+@media screen and (max-width: 600px) {
+  #blog {
+    background-image: url(images/buffalo.jpg);
+    background-size: 400%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%; } }
+/*Titles & Headings*/
+posttitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase; }
+
+subheading, secondheading, secondtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1em; }
+
+secondtitle {
+  font-weight: 800;
+  text-transform: uppercase; }
+
+p.post {
+  padding-left: 10cm; }
+
+/*Blog HomePage*/
+.blogbox {
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  /*color: $maincolor;
+  background-color: rgba(0, 0, 0, 0);*/
+  width: 60%; }
+
+@media screen and (max-width: 600px) {
+  .blogbox {
+    width: 90%;
+    left: 5%;
+    right: 5%; } }
+.blogintro {
+  padding: 30px;
+  height: 100%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: auto;
+  overflow: scroll; }
+
+@media screen and (max-width: 600px) {
+  .blogintro img {
+    width: 100%; }
+
+  p {
+    display: none; } }
+.blogintro a:link, a:visited {
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.blogintro a:hover {
+  color: #2f599b; }
+
+/*Blog Post*/
+.blogboxpage {
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  color: black;
+  background-color: transparent;
+  width: 60%;
+  /*overflow: scroll;*/ }
+
+.blogintropage {
+  padding: 30px;
+  height: 90%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  overflow: scroll; }
+
+.blogintropage a:link, a:visited {
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.blogintropage a:hover {
+  color: #2f599b; }
+
+pagetitle a:link {
+  font-family: "Rock Salt";
+  font-weight: 800;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  pagetitle a:link:hover {
+    color: #2f599b; }
+
+table a:link {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+table a:hover {
+  color: #2f599b; }
+
+/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ $maincolor: black;
 $secondcolor: #2f599b;
 $thirdcolor: white;
 
+
 $xs-width: 600px;
 $s-width: 800px;
 $m-width: 1000px;
@@ -77,6 +78,9 @@ input[type=password]:hover {
   @include formhover;
 }
 
+#email_err, #username_err, #password_err {
+  color: red;
+}
 /*Nav Bar & Footer*/
 
 nav a {
